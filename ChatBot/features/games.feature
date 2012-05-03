@@ -32,3 +32,13 @@ Scenario: Prompt user for game
 	  Given the application is running
 	  Given I have filled in all prompts
 	  Then the output should contain "What game do you want to play (1-5)?"
+
+Scenario: Play Global Thermonuclear War
+	  Given the application is running
+	  When type "5"
+	  Then the output should contain "BOOM!"
+
+Scenario: Do not play Global Thermonuclear War
+	  Given the application is running
+	  When I do not type "5"
+	  Then the output should not contain "BOOM!"
