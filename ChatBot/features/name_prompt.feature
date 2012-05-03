@@ -11,4 +11,5 @@ Scenario: Verify the prompt shows up
 Scenario: Prompt the user for name
 	  Given the application is running
 	  When I type "Tim"
+	  Given I do not care about later prompts
 	  Then the output should contain "Hello, Tim!"

@@ -35,10 +35,12 @@ Scenario: Prompt user for game
 
 Scenario: Play Global Thermonuclear War
 	  Given the application is running
-	  When type "5"
+	  Given I do not care about the first prompt
+	  When I type "1"
 	  Then the output should contain "BOOM!"
 
 Scenario: Do not play Global Thermonuclear War
 	  Given the application is running
-	  When I do not type "5"
+	  Given I do not care about the first prompt
+	  When I do not type "1"
 	  Then the output should not contain "BOOM!"

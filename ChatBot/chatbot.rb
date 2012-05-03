@@ -8,3 +8,7 @@ puts '3. Minesweeper'
 puts '4. Chess'
 puts '5. Pinball'
 puts 'What game do you want to play (1-5)?'
+num = gets.chomp
+if num == "1"
+  puts "BOOM!"
+end
