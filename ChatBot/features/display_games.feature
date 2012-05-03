@@ -26,3 +26,8 @@ Scenario: Verify Chess shows
 Scenario: Verify prompt for number
 	  Given the application is running
 	  Then I should see "What game do you want to play (1-5)?"
+
+Scenario: Verify Global Thermonuclear War selection
+	  Given the application is running
+	  When I type "5"
+	  Then I should see "BOOM!"
