@@ -22,3 +22,7 @@ Scenario: Verify Pinball shows
 Scenario: Verify Chess shows
 	  Given the application is running
 	  Then I should see "Chess"
+
+Scenario: Verify prompt for number
+	  Given the application is running
+	  Then I should see "What game do you want to play (1-5)?"
