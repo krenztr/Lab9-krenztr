@@ -1,1 +1,6 @@
 puts 'What is your name?'
+puts '1. Global Thermonuclear War'
+puts '2. Solitare'
+puts '3. Minesweeper'
+puts '4. Pinball'
+puts '5. Chess'
