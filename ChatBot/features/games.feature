@@ -27,3 +27,8 @@ Scenario: List "Pinball" as an option
 	  Given the application is running
 	  Given I have filled in all prompts
 	  Then the output should contain "5. Pinball"
+
+Scenario: Prompt user for game
+	  Given the application is running
+	  Given I have filled in all prompts
+	  Then the output should contain "What game do you want to play (1-5)?"
