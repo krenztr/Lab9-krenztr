@@ -2,7 +2,7 @@ Given /^the application is running$/ do
   run_interactive(unescape("ruby chatbot.rb"))
 end
 
-Given /^I typed in something$/ do
+Given /^I have filled in all prompts$/ do
   type("Test")
 end
 

@@ -5,7 +5,7 @@ Feature: Prompt a user for their name
 
 Scenario: Verify the prompt shows up
 	  Given the application is running
-	  Given I typed in something
+	  Given I have filled in all prompts
 	  Then I should see "What is your name?"
 
 Scenario: Prompt the user for name
